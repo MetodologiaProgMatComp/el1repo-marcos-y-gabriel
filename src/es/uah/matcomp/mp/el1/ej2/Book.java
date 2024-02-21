@@ -2,19 +2,19 @@ package es.uah.matcomp.mp.el1.ej2;
 
 import es.uah.matcomp.mp.el1.ej1.Author;
 
-public class BookArrays {
+public class Book {
     private String name;
     private Author[] authors;
     private double price;
     private int qty = 0;
 
-    public BookArrays(String name, Author[] authors, double price) {
+    public Book(String name, Author[] authors, double price) {
         this.name = name;
         this.authors = authors;
         this.price = price;
     }
 
-    public BookArrays(String name, Author[] authors, double price, int qty) {
+    public Book(String name, Author[] authors, double price, int qty) {
         this.name = name;
         this.authors = authors;
         this.price = price;
@@ -26,6 +26,7 @@ public class BookArrays {
     }
 
     public Author[] getAuthors() {
+
         return authors;
     }
 
@@ -46,18 +47,24 @@ public class BookArrays {
     }
 
     public String toString() {
-        return "Book[name=" + name + " authors = [" + authors.toString() + "] price=" + price + " qty="
+        String cadena = "";
+        for (int i = 0; i < authors.length; i++) {
+            cadena = cadena +  authors[i].toString() + " ";
+        }
+
+
+        return "Book[name=" + name + " authors = [ " + cadena + " price=" + price + " qty="
                 + qty + "]";
     }
 
-    public getAuthorsNames() {
+    public String getAuthorsNames() {
         String authorsString = "";
-        for (int i = 0; i <= authors.length; i++) {
+        for (int i = 0; i < authors.length; i++) {
 
-            authorsString += authors[i].getName();
+            authorsString = authorsString + authors[i].getName();
 
         }
-        return authorsString
+        return authorsString;
     }
 
 }
