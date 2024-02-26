@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.el1.ej2;
 
-import es.uah.matcomp.mp.el1.ej1.Author;
+
 
 public class Book {
     private String name;
@@ -27,7 +27,7 @@ public class Book {
 
     public Author[] getAuthors() {
 
-        return authors;
+            return authors;
     }
 
     public double getPrice() {
