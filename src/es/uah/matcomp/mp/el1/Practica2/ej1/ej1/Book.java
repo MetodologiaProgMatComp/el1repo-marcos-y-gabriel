@@ -1,6 +1,6 @@
-package es.uah.matcomp.mp.el1.ej1;
+package es.uah.matcomp.mp.el1.Practica2.ej1.ej1;
 
-import es.uah.matcomp.mp.el1.ej1.Author;
+import es.uah.matcomp.mp.el1.Practica2.ej1.ej1.Author;
 
 public class Book {
     private String name;
