@@ -11,14 +11,6 @@ public class Account {
         this.balance = balance;
     }
 
-    public Account2(int id;
-
-    Customer_cliente customer)
-
-    {
-        this.id = id;
-        this.customer = customer;
-    }
 
     public int getId() {
         return id;
@@ -41,20 +33,21 @@ public class Account {
     }
 
     public String getCustomerName() {
-        return getName()
+        return customer.getName();
     }
 
-    public Account deposit(double amount) {
+    public double deposit(double amount) {
         balance = balance + amount;
         return balance;
     }
 
-    public Account withdraw(double amount) {
+    public double withdraw(double amount) {
         if (balance >= amount) {
             balance = balance - amount;
-            return balance;
+            ;
         } else {
             System.out.println("Amount withdrawn exceeds the current balance");
         }
+        return balance;
     }
 }
