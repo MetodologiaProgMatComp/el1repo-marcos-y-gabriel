@@ -1,7 +1,7 @@
-package es.uah.matcomp.mp.el1.ej1;
+package es.uah.matcomp.mp.el1.Practica2.ej1.ej1;
 
-import es.uah.matcomp.mp.el1.ej1.Author;
-import es.uah.matcomp.mp.el1.ej1.Book;
+import es.uah.matcomp.mp.el1.Practica2.ej1.ej1.Author;
+import es.uah.matcomp.mp.el1.Practica2.ej1.ej1.Book;
 
 public class MainBook {
     public static void main(String[] args){
