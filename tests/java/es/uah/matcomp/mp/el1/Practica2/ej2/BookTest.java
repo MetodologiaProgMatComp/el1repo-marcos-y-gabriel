@@ -1,9 +1,7 @@
-package es.uah.matcomp.mp.el1.ej2;
+package es.uah.matcomp.mp.el1.Practica2.ej2;
 
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class BookTest {
     Author aux1 = new Author("Tan Ah Teck", "AhTeck@somewhere.com", 'm');

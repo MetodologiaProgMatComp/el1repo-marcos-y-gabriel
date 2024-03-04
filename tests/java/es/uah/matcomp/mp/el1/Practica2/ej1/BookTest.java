@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.el1.ej1;
+package es.uah.matcomp.mp.el1.Practica2.ej1;
 
 import org.junit.jupiter.api.Test;
 

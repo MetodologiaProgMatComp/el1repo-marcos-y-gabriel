@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.el1.ejercicioclases;
+package es.uah.matcomp.mp.el1.Practica2.ejercicioclases;
 
 import es.uah.matcomp.mp.el1.Practica2.ej1.ejercicioclases.Author;
 import es.uah.matcomp.mp.el1.Practica2.ej1.ejercicioclases.Book;
