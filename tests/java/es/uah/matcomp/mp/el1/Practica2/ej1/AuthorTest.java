@@ -1,4 +1,7 @@
 package es.uah.matcomp.mp.el1.Practica2.ej1;
+import es.uah.matcomp.mp.el1.Practica2.ej1.ej1.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 class AuthorTest {
     Author autor1=new Author("Juan", "juan@email", 'm');

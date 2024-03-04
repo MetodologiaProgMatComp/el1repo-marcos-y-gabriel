@@ -1,4 +1,8 @@
 package es.uah.matcomp.mp.el1.Practica2.ej2;
+import es.uah.matcomp.mp.el1.Practica2.ej1.ej2.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
 
 
 class AuthorTest {
