@@ -1,0 +1,45 @@
+Practica1:
+       Pregunta: ¿Puede ejecutarse la clase creada?
+       La clase creada no puede ejecutarse directamente. Necesita de un método que la llame. Para ello se crea un fichero nuevo, con un
+       método especial, denominado main(), que es el usado por java para poder arrancar un programa. Es el programa principal
+
+       Dado que tenemos los programas de prueba de las clases anteriores, y en estos programas se muestra qué se espera que
+       aparezca en pantalla según la ejecución de los ejercicios, añada para todas las clases de los ejercicios los tests necesarios para
+       verificar la correcta ejecución de todos ellos.
+       Asegure que los tests tienen una cobertura del 100% del código desarrollado en las clases.
+       (Usamos JUnit 5)
+       Pasos:
+       Crear directorio test
+       Crear directorio test/java
+       Crear directorio test/resources
+       Marcar directorio test/java como “Test Source Root”
+       Marcar directorio test/resources como “Test Resources Root”
+
+Practica2:
+       Si bien la composición y la agregación son similares a nivel de código, son distintas a nivel semántico: La composición indica que
+       un objeto está compuesto de otros, y sin esos otros este primer objeto no tiene sentido.
+       La agregación, por otro lado, indica que los objetos sí pueden tener sentido por sí mismos de manera independiente
+
+-ej2
+       Fíjate que aunque ambas clases tienen un atributo denominado “name”, no se comparte entre ellas, pues se refiere a entidades
+       distintas. Para referirnos al atributo, debemos usar la instancia de clase que está asociada al que queremos usar. Es importante
+       que los atributos se nombren adecuadamente teniendo en cuenta la propia clase en la que se definen: haber creado un atributo
+       nameAuthor y otro atributo nameBook habría sido una mala práctica, ya que los atributos deben ser nombrados según el contexto
+       de la clase donde se definen. En un Author sólo hay un name, por lo que el nombre del atributo debe ser ese. Lo mismo ocurre en
+       Book.
+
+-ej5
+    En este ejercicio trabajaremos con la sobrecarga de métodos: varios métodos tendrán el mismo nombre, pero distintos
+    parámetros, por lo que la firma de los mismos será distinta.
+    La clase tiene:
+    • dos atributos x e y de tipo int.
+    • Un constructor por defecto, para la localización (0,0).
+    • Un constructor sobrecargado que recibe las coordenadas del punto.
+    • Los getters y setters de los atributos, y de su conjunto (x,y).
+    • Un método toString para mostrar por pantalla los puntos en formato “(X, Y)”
+    • Un método para calcular la distancia desde el punto a las coordenadas pasadas por parámetro.
+    • Un método para calcular la distancia desde el punto a otro punto.
+    • Un método para calcular la distancia desde el punto al origen de coordenadas.
+
+
+
