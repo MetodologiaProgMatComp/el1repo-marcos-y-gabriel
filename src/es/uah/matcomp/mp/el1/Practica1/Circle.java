@@ -1,4 +1,4 @@
-package programacion;
+package es.uah.matcomp.mp.el1.Practica1;
 
 public class Circle {
 private double radius;
@@ -24,7 +24,7 @@ public void Circle( double newRadius){
     return 2*radius*Math.PI;
     }
     public String toString(){
-    return "programacion.Circle[radius="+radius+"]";
+    return "es.uah.matcomp.mp.el1.Practica1.Circle[radius="+radius+"]";
     }
 }
 

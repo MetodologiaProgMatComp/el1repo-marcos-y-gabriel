@@ -36,7 +36,7 @@ public class MyPoint {
         return  XY;}
 
     public String toString() {
-        return "MyPoint]x=" + x +", y=" + y + ']';
+        return "MyPoint[x=" + x +", y=" + y + ']';
     }
     public double distance(int x, int y){
         double dist = Math.sqrt(Math.pow(this.x-x,2)+Math.pow(this.y-y,2));

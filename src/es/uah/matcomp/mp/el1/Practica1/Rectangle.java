@@ -1,4 +1,4 @@
-package programacion;
+package es.uah.matcomp.mp.el1.Practica1;
 
 public class Rectangle {
     private float length;
@@ -36,7 +36,7 @@ public class Rectangle {
     }
 
     public String toString(){
-        return "programacion.Rectangle[length="+length+",width="+width+"]";
+        return "es.uah.matcomp.mp.el1.Practica1.Rectangle[length="+length+",width="+width+"]";
     }
 }
 

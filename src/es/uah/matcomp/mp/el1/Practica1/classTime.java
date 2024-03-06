@@ -5,7 +5,7 @@ public class classTime {
     private int minute;
     private int second;
 
-    public  void Time(int x, int y, int z) {
+    public  classTime(int x, int y, int z) {
         hour = x;
         minute = y;
         second = z;
@@ -49,7 +49,7 @@ public class classTime {
     public int nextSecond() {
         return  second+1;
     }
-    public int previusSecond(){
+    public int previousSecond(){
         return second+1;
     }
 }

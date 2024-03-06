@@ -7,7 +7,7 @@ public class classDate {
     private int month;
     private int year;
 
-    public void Date(int x, int y, int z) {
+    public void classDate(int x, int y, int z) {
         this.day = x;
         this.month = y;
         this.year = z;
