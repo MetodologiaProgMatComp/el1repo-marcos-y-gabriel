@@ -7,6 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CylinderTest {
     Cylinder c1 = new Cylinder();
+    Cylinder c2 = new Cylinder(3);
+    Cylinder c3 = new Cylinder(1,3);
 
     @Test
     void getHeight() {

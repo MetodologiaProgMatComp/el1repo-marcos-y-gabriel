@@ -1,11 +1,14 @@
-package es.uah.matcomp.mp.el1.Practica3.ej1.ej1;
+package es.uah.matcomp.mp.el1.Practica3.ej1;
 
+import es.uah.matcomp.mp.el1.Practica3.ej1.ej1.Circle;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CircleTest {
     Circle c1 = new Circle();
+    Circle c2 = new Circle(3);
+    Circle c3 = new Circle(3,"re");
 
     @Test
     void getRadius() {

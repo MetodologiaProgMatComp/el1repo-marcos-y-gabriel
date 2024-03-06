@@ -61,7 +61,7 @@ class InvoiceTest {
     void getCustomerName() {
         Customer[] res = {p1,p2};
         String[] cont = x1.getCustomerName();
-        for (int i=0;i<2 ;i++){
+        for (int i=0;i<2 ;i+=1){
             assertEquals(cont[i],res[i].getName());
         }
     }

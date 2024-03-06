@@ -36,8 +36,8 @@ public class Invoice {
         this.amount = amount;
     }
     public int[] getCustomerId(){
-        int[] id = {};
-        for (int i = 0; i< 2; i++){
+        int[] id = new int[customer.length];
+        for (int i=0;i< customer.length;i+= 1){
             id[i] = customer[i].getId();
             }
 
@@ -46,8 +46,8 @@ public class Invoice {
 
     }
     public String[] getCustomerName(){
-        String[] id = {};
-        for (int i=0;i< 2;i++){
+        String[] id = new String[customer.length];
+        for (int i=0;i< customer.length;i+= 1){
             id[i] = customer[i].getName();
         }
 
@@ -55,8 +55,8 @@ public class Invoice {
         return id;
     }
     public  int[] getCustomerDiscount(){
-        int[] id = {};
-        for (int i=0;i< 2;i++){
+        int[] id = new int[customer.length];
+        for (int i=0;i< customer.length;i+= 1){
             id[i] = customer[i].getDiscount();
         }
 
