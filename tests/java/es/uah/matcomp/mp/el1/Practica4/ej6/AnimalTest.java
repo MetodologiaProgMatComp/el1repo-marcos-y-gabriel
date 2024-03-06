@@ -1,0 +1,14 @@
+package es.uah.matcomp.mp.el1.Practica4.ej6;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class AnimalTest {
+    Animal c1 = new Cat("p");
+
+    @Test
+    void greets() {
+        c1.greets();
+    }
+}

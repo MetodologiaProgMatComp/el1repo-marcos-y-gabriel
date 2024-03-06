@@ -1,7 +1,6 @@
 package es.uah.matcomp.mp.el1.Practica1;
 
-import org.junit.Assert;
-import org.junit.Test
+
 import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -10,7 +9,7 @@ class classDateTest {
     Date fecha=new Date(12,2,2011);
     @org.junit.jupiter.api.Test
     void getDay() {
-        Assert.assertEquals(fecha.getDay(),12);
+        assertEquals(fecha.getDay(),12);
     }
 
     @org.junit.jupiter.api.Test

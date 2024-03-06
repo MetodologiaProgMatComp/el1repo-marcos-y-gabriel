@@ -12,7 +12,7 @@ Employee em=new Employee();
 
     @org.junit.jupiter.api.Test
     void getFirstName() {
-        assertEquals(em.getFirstName()"Juan");
+        assertEquals(em.getFirstName(),"Juan");
     }
 
     @org.junit.jupiter.api.Test
@@ -36,9 +36,7 @@ Employee em=new Employee();
         assertEquals(em.getSalary(),1200);
     }
 
-    @org.junit.jupiter.api.Test
-    void getAnnualSalary() {
-        assertEquals(em.getAnnualSalary(),1200*12);
+
     }
 
-    @org.junit.jupiter.api.Test
+

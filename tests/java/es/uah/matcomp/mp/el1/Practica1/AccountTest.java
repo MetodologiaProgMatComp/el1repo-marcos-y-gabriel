@@ -32,6 +32,6 @@ Account acount1=new Account("123","pepe",500);
 
     @org.junit.jupiter.api.Test
     void transferTo() {
-        assertEquals(transferTo(),acount1,500);
+        assertEquals(acount1.transferTo(acount1,1),"");
     }
 }
