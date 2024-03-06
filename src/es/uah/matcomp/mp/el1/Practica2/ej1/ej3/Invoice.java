@@ -1,5 +1,8 @@
 package es.uah.matcomp.mp.el1.Practica2.ej1.ej3;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Invoice {
 
     private int id;
@@ -21,8 +24,8 @@ public class Invoice {
         return customer;
     }
 
-    public void setCustomer(Customer customer) {
-        this.customer = new Customer[]{customer};
+    public void setCustomer(Customer[] customer) {
+        this.customer = customer;
     }
 
     public double getAmount() {
@@ -32,16 +35,33 @@ public class Invoice {
     public void setAmount(double amount) {
         this.amount = amount;
     }
-    public int getCustomerId(){
+    public int[] getCustomerId(){
+        int[] id = {};
+        for (int i = 0; i< 2; i++){
+            id[i] = customer[i].getId();
+            }
+
+
         return id;
 
     }
-    public String getCustomerName(){
-        return customer[1].getName();
-    }
-    public  int getCustomerDiscount(){
-        return customer[1].getDiscount();
+    public String[] getCustomerName(){
+        String[] id = {};
+        for (int i=0;i< 2;i++){
+            id[i] = customer[i].getName();
+        }
 
+
+        return id;
+    }
+    public  int[] getCustomerDiscount(){
+        int[] id = {};
+        for (int i=0;i< 2;i++){
+            id[i] = customer[i].getDiscount();
+        }
+
+
+        return id;
     }
     public double getAmountAfterDiscount(){
         return amount-amount*customer[1].getDiscount();
