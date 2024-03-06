@@ -1,0 +1,80 @@
+@startuml
+'https://plantuml.com/class-diagram
+@startuml
+'https://plantuml.com/class-diagram
+
+class Rect{
+-px
+-py
+-dnnmm
+-dy
++onClick(x,y)
++onMove(x,y)
++KeyPress(key)
++Draw_border(x,y,dx,dy)
++Draw_pick(x,y,dx,dy,pick)
++Draw_text(x,y,text)
++Draw_fill(x,y,dx,dy,colours)
+}
+class Doors{
+-titulo: String
+-simbolo:Integer
+-menu de control: Integer
+-Maximizar
+-Minimizar
+-Cerrar
++onClick(x,y)
++setTitulo()
++onMove(x,y)
++Draw_border(x,y,dx,dy)
++Draw_pick(x,y,dx,dy,pick)
++Draw_text(x,y,text)
++Draw_fill(x,y,dx,dy,colours)
+}
+class Menu{}
+
+class Raton{
+-tamaño:integer
+-forma: integer
++onClick(x,y)
++onMove(x,y)
++Draw_border(x,y,dx,dy)
++Draw_pick(x,y,dx,dy,pick)
++Draw_text(x,y,text)
++Draw_fill(x,y,dx,dy,colours)
+}
+class Teclado{
++KeyPress(key)
+}
+class Maximizar{
+Maximizarventana()
+}
+class Minimizar{
+MinimizarVentana()
+}
+class ventana1{}
+class ventana2{}
+class ventana3{}
+class Cerrar{
+CerrarVentana()
+}
+class NuevaVentana{
+newVentana()
+}
+Doors-->Ventanaprincipal: Cada dooor tiene su venatana principal
+Rect-->Raton:Para poder usar el raton
+Rect-->Teclado:para poder usar el teclado
+Raton-->Doors:Para movernos en ella
+Teclado-->Doors:Para escribir en ella
+Doors-->Minimizar:Minimizamos la pantalla
+Minimizar-->Doors:Devolvemos la pantalla minimizada
+Doors-->Maximizar:Maximizamos la pantalla
+Maximizar-->Doors:Devolvemos la pantalla maximizada
+Doors-->Menu: Pasamos al menu de control
+Doors-->Cerrar: Cerramos la pantalla
+
+
+
+'/
+@enduml
+@enduml
